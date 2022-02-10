@@ -55,7 +55,7 @@ void * mult(void *arg){
 	int i,j,k;
 	
 	pthread_mutex_lock(&mutex);
-	// Here inner loop executes only one time from num to num+1 
+	// Here outer loop executes only one time from num to num+1 
 	// So each Thread calculate the result of the respective row
 	for(i=num;i<num+1;i++)
 	{
